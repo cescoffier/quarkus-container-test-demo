@@ -59,5 +59,11 @@ public class MoviesEndpoint {
         movie.delete();
     }
 
+    @DELETE
+    @Transactional
+    public void deleteAll() {
+        Movie.deleteAll();
+    }
+
 
 }
