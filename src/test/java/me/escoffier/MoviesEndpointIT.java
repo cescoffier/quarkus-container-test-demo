@@ -12,7 +12,6 @@ class MoviesEndpointIT extends MoviesEndpointTest {
     @Override
     @BeforeEach
     public void setup() {
-        System.out.println(">>>>>>>>> " + RestAssured.baseURI);
         RestAssured.delete("/movies");
     }
 }
